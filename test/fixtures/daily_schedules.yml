@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_and_time: 2016-02-08 17:45:57
+  dog_name: MyString
+  people_name: MyString
+
+two:
+  date_and_time: 2016-02-08 17:45:57
+  dog_name: MyString
+  people_name: MyString
