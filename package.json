@@ -1,0 +1,35 @@
+{
+  "name": "dogwalker",
+  "version": "1.0.0",
+  "description": "Example scheduling application for the Mojotech blog.",
+  "main": "server-express.js",
+  "engines": {
+    "node": "5.0.0",
+    "npm": "3.3.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mojotech/dogwalker.git"
+  },
+  "author": "Cathy Zoller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mojotech/dogwalker/issues"
+  },
+  "homepage": "https://github.com/mojotech/dogwalker#readme",
+  "dependencies": {
+    "babel-eslint": "~>4.1.3",
+    "babelify": "~>6.3.0",
+    "browserify": "~> 10.2.4",
+    "browserify-incremental": "^3.0.1",
+    "eslint": "~>1.6.0",
+    "moment": "~>2.11.1",
+    "moment-timezone": "~>0.5.0",
+    "react": "0.14.x",
+    "react-bootstrap-datetimepicker": "^0.0.22",
+    "react-dom": "^0.14.2"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^3.5.1"
+  }
+}
