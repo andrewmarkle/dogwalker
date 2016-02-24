@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160209004557) do
+ActiveRecord::Schema.define(version: 20160224124127) do
 
   create_table "daily_schedules", force: :cascade do |t|
     t.datetime "date_and_time"
@@ -19,6 +19,32 @@ ActiveRecord::Schema.define(version: 20160209004557) do
     t.string   "people_name"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.integer  "user_id"
+  end
+
+  create_table "dogs", force: :cascade do |t|
+    t.string   "name"
+    t.string   "age"
+    t.string   "treats"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.boolean  "walker"
+    t.string   "name"
+    t.string   "street_address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
+    t.string   "postal_code"
+    t.string   "timezone"
+    t.string   "telephone"
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end
