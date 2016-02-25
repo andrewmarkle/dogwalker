@@ -11,10 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :date_and_time %><br>
-    <%= f.datetime_select :date_and_time %>
+  <div class = "row">
+    <div class = "col-xs-8 col-xs-1">
+      <div class = "datepicker_initializer"
+        data-model = "daily_schedule"
+        data-field = "date_and_time",
+        data-label = "Start Time",
+        data-date = <%= @daily_schedule.try(:start_time) || Time.zone.now %>
+        data-timezone = "Eastern Time (US & Canada)"
+      ></div>
+      <!-- ToDo: make timezone dynamic -->
+    </div>
   </div>
+
   <div class="field">
     <%= f.label :dog_name %><br>
     <%= f.text_field :dog_name %>
