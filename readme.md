@@ -13,7 +13,7 @@ Currently, the master branch is configured with Browserify to manage React JavaS
 
 In the command line run:
 ```
-git clone https://mojotech/dogwalker.git
+git clone https://github.com/mojotech/dogwalker.git
 cd dogwalker
 bundle && npm install
 ```
